@@ -58,4 +58,4 @@ tidyNames <- gsub('[()-]', '', tidyNames)
 tidyNames <- gsub('BodyBody', 'Body', tidyNames) 
 names(tidyData) <- tidyNames
 
-write.table(tidyData, file = "./tidyData.txt", sep="\t")
+write.table(tidyData, file = "./tidyData.txt", sep="\t", row.name=FALSE)
